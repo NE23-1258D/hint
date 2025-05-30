@@ -1,12 +1,126 @@
-/* ... 既存のCSSの下に追加 ... */
+/* リセットCSS */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* キーワード入力セクションの追加スタイル */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* ヘッダー */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* セクションボックス */
+.section-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.section-box h2 {
+    color: #555;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* 目次 */
+#table-of-contents nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* 小さい画面で折り返す */
+    gap: 15px; /* アイテム間のスペース */
+}
+
+#table-of-contents nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#table-of-contents nav ul li a:hover {
+    color: #0056b3;
+}
+
+/* コンテンツプレースホルダー */
+.content-placeholder {
+    min-height: 50px; /* ある程度の高さを確保 */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px dashed #ccc;
+    text-align: center;
+    color: #777;
+    display: flex; /* flexboxを使って中央寄せ */
+    flex-direction: column; /* 縦方向に並べる */
+    align-items: center; /* 水平方向の中央寄せ */
+    justify-content: center; /* 垂直方向の中央寄せ */
+}
+
+/* ボタン (汎用) */
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 30px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* --- キーワード入力セクションの追加スタイル --- */
+/* .content-placeholderのdisplay:flex設定を上書き */
 #keywords .content-placeholder {
+    /* 既に.content-placeholderでflex設定されているので、
+       ここでのflex設定は重複する可能性がありますが、
+       必要であれば個別に上書き調整してください。
+       今回は親の.content-placeholderが既にcolumnかつ中央寄せなので、
+       ここで再度設定する必要はあまりないかもしれません。
+       しかし、明示的に記述しておくことで意図が明確になります。
+    */
     display: flex;
     flex-direction: column;
-    align-items: center; /* 中央寄せ */
+    align-items: center; /* 子要素を中央寄せ */
     gap: 15px; /* 要素間のスペース */
-    padding: 20px;
+    padding: 20px; /* 親のパディングと競合しないように調整 */
 }
 
 #keywordInput {
