@@ -1,0 +1,106 @@
+/* リセットCSS */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* ヘッダー */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* セクションボックス */
+.section-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.section-box h2 {
+    color: #555;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* 目次 */
+#table-of-contents nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* 小さい画面で折り返す */
+    gap: 15px; /* アイテム間のスペース */
+}
+
+#table-of-contents nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#table-of-contents nav ul li a:hover {
+    color: #0056b3;
+}
+
+/* コンテンツプレースホルダー */
+.content-placeholder {
+    min-height: 50px; /* ある程度の高さを確保 */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px dashed #ccc;
+    text-align: center;
+    color: #777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ボタン */
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 30px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+}
