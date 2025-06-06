@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (keywordInput && submitKeywordBtn && keywordOutput) {
         // キーワードと対応するメッセージのマップ
         const keywordMap = {
-            "かおりのそと": "成功1",
+            "かおりのそと": "1.ひまわり1.ひまわり2.ハイビスカス3.オニユリ4.エノコログサ5.ソメイヨシノ",                            
             "あおいそら": "成功2",
             "ミドリィ": "成功3"
         };
