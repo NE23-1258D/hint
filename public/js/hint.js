@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (keywordInput && submitKeywordBtn && keywordOutput) {
         // キーワードと対応するメッセージのマップ
         const keywordMap = {
-            "1": "成功1",
-            "2": "成功2",
-            "3": "成功3"
+            "かおりのそと": "成功1",
+            "あおいそら": "成功2",
+            "ミドリィ": "成功3"
         };
 
         submitKeywordBtn.addEventListener('click', () => {
