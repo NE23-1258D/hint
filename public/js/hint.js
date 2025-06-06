@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const goToHintPageBtn = document.getElementById('goToHintPageBtn');
     if (goToHintPageBtn) {
         goToHintPageBtn.addEventListener('click', () => {
-            alert('ヒント専用ページへ移動します。(まだ開発中)');
+            // ページを別のURLに移動させる
+            window.location.href = " https://ne23-1258d.github.io/RPGmastor/";
             // 実際には、次の行のようなコードでページ遷移を行います。
             // window.location.href = '/hint-page'; // Expressルートなどで定義されたヒントページへのパス
         });
@@ -17,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (keywordInput && submitKeywordBtn && keywordOutput) {
         // キーワードと対応するメッセージのマップ
         const keywordMap = {
-            "かおりのそと": "1.ひまわり1.ひまわり2.ハイビスカス3.オニユリ4.エノコログサ5.ソメイヨシノ",                            
+            "かおりのその": "1.ひまわり2.ハイビスカス3.オニユリ4.エノコログサ5.ソメイヨシノ",                            
             "あおいそら": "成功2",
             "ミドリィ": "成功3"
         };
